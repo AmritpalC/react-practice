@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Recipe from "./components/Recipe";
+import Recipe from "../src/components/Recipe";
 
 // describe - beforeEach - render
 // test - expect - assert

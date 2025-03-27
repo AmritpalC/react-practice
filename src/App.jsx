@@ -2,6 +2,7 @@ import Hello from "./components/Hello";
 import Profile from "./components/Profile";
 import Product from "./components/Product";
 import Recipe from "./components/Recipe";
+import Counter from "./components/Counter";
 
 import ClickListener from "./components/ClickListener";
 import InputHandler from "./components/inputHandler";
@@ -12,7 +13,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Hello name="World" />
+      {/* <Hello name="World" />
       <img className="logo" src={makersLogo}></img>
       <Profile
         name="Quackier Makers"
@@ -31,7 +32,8 @@ function App() {
       />
       <ClickListener />
       <InputHandler />
-      <Recipe title="Finnish cinnamon buns" type="dessert" duration={60} />
+      <Recipe title="Finnish cinnamon buns" type="dessert" duration={60} /> */}
+      <Counter />
     </>
   );
 }

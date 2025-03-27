@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Profile from "./components/Profile";
+import Profile from "../src/components/Profile";
 
 // Setup - do something - assert
 // test("renders with the correct title", () => {
