@@ -1,22 +1,31 @@
 import { useState } from "react";
 
+const CountDisplay = (props) => {
+  return <h1>{props.count}</h1>;
+};
+
+const IncreaseButton = (props) => {
+  const increaseCount = () => {
+    props.setCount(props.count + 1);
+  };
+  return <button onClick={increaseCount}>Increment</button>;
+};
+
+const DecreaseButton = (props) => {
+  const decreaseCount = () => {
+    props.setCount(props.count - 1);
+  };
+  return <button onClick={decreaseCount}>Decrement</button>;
+};
+
 const Counter = () => {
   const [count, setCount] = useState(0);
-
-  const incrementCount = () => {
-    setCount(count + 1);
-  };
-
-  const decrementCount = () => {
-    setCount(count - 1);
-  };
-
   return (
     <>
-      <h1>{count}</h1>
+      <CountDisplay count={count} />
       <div className="counters">
-        <button onClick={incrementCount}>Increment</button>
-        <button onClick={decrementCount}>Decrement</button>
+        <IncreaseButton count={count} setCount={setCount} />
+        <DecreaseButton count={count} setCount={setCount} />
       </div>
     </>
   );
